@@ -1,0 +1,105 @@
+/* Variables */
+$corPrimaria: #e63f34;
+$corTxtPadrao: #fff;
+$corTxtPadraoMobile: #000;
+$corActiveMobile: #fff397;
+.btnPrimario {
+	background: $corPrimaria;
+	color: $corTxtPadrao;
+	font-size: 18px;
+	line-height: 16px;
+	padding: 16px 28px;
+	border-radius: 24px;
+	transition: all 0.3s;
+}
+.btnPrimario:hover{
+	background: $corTxtPadrao;
+	color: $corPrimaria;	
+}
+ 
+.App{
+	display: block;
+	.logo{
+	  	img{
+	  		text-align: center;
+	  		display: block;
+	  		margin: 0 auto;
+	  	}
+	}
+	a:hover,
+	a:active{
+		text-decoration: none;
+	}
+	.Hero{
+		padding: 20px 0;
+		@media (min-width: 768px){
+			padding: 60px 0 100px;
+			/*height: 90vh;*/
+			position: relative;
+			// overlay pro bg
+			&:before{
+				background: $corTxtPadraoMobile;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: -1;
+				left: 0;
+				opacity: 0.6;
+				top: 0;
+				content: "";
+			}	
+		}
+		.containerBG{
+			@media (min-width: 768px){
+				width: 100%;
+				height: 100%;
+				background: url(img/hero-incriveis.jpg) no-repeat center center transparent;
+				background-size: cover;
+				position: absolute;
+				z-index: -2;
+				left: 0;
+				top: 0;
+			}
+		}
+		.content{
+			padding: 0 20px;
+			text-align: center;
+			color: $corTxtPadraoMobile;
+			@media (min-width: 768px){
+				color: $corTxtPadrao;
+			} 
+			h2{
+				margin-bottom: 30px;
+				line-height: 36px;
+				strong{
+					font-weight: 600;
+					color: $corPrimaria;
+				}
+				@media (min-width: 768px){
+					max-width: 500px;
+					font-size: 52px;
+					line-height: 50px;
+					margin: 0 auto 30px;
+				}	
+			}
+			h5{
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 28px;
+				margin-bottom: 50px;
+				@media (min-width: 768px){
+					max-width: 500px;
+					font-size: 28px;
+					line-height: 32px;
+					margin: 0 auto 50px;
+
+				}
+			}
+			.btnCta{
+				svg{
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+}
