@@ -31,7 +31,7 @@ $corActiveMobile: #fff397;
 		text-decoration: none;
 	}
 	.Hero{
-		padding: 20px 0;
+		padding: 20px 0 60px;
 		@media (min-width: 768px){
 			padding: 60px 0 100px;
 			/*height: 90vh;*/
@@ -101,5 +101,47 @@ $corActiveMobile: #fff397;
 				}
 			}
 		}
+	}
+	.Slick{
+		.slick-slide img { 
+		    max-width: 100%;
+		}
+		.filmes{
+			position: relative;	
+			a{
+				color: #000;
+				margin: 10px 0 40px;
+				display: block;
+				text-align: center;
+				font-weight: 600;
+				@media (min-width: 768px){
+					margin: 10px 0 20px;
+					text-align: left;
+				}
+			}
+			&:hover{
+				img{
+					opacity:0.8; 
+				}
+				.btnCta{
+					opacity: 1;
+				}
+			}
+			img{
+				background: $corTxtPadraoMobile;
+				transition: opacity 0.5s;
+			}
+			.btnCta{
+				position: absolute;
+				top: 6%;
+				left: calc(50% - 92px);
+				opacity: 0;
+				cursor: pointer;				
+				svg{
+					margin-left: 6px;
+				}
+			}
+		}
+
 	}
 }

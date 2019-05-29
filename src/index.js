@@ -4,9 +4,9 @@ import App from "./App";
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faEye } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faArrowRight)
+library.add(faArrowRight, faEye)
 
 ReactDOM.render(
   <App />,
