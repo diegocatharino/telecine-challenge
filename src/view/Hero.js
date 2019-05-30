@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../img/tcplay.png'; 
-import logoFff from '../img/tcplay-fff.png'; 
 
 class Hero extends Component {
   render() {
