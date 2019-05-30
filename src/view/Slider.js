@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slick from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FormModal from "./Form";
 
 const API = `content/populares.json`;
 
@@ -71,7 +72,8 @@ class Slider extends React.Component {
                 <div key={item.id} className="filmes">
                     <img alt={item.titulo_portugues} src={item.poster_m} />
                     <a href={item.id}>{item.titulo_portugues}</a>
-                    <div className="btnCta btnPrimario">Assistir <FontAwesomeIcon icon="eye" /></div>
+
+                    <FormModal />
                 </div>) 
             })}
           </Slick>

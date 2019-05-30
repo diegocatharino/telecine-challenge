@@ -14,7 +14,6 @@ class App extends Component {
 			<Slider />
 			<Details />
 			<Footer />
-			<FormModal />
 		</div>
     );
   }
