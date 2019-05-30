@@ -22,18 +22,24 @@ class BootstrapForm extends React.Component {
     
   }
   handleSubmit(event) {
+    event.preventDefault();
+    event.stopPropagation();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
-
-      console.log("INVALID FORM - not submitted");
-      event.preventDefault();
-      event.stopPropagation();
+      this.setState({ validated: true });     
     } else{
-      console.log("VALID FORM - submitted");
-      this.showSuccess();
+      this.setState({ validated: false });
     } 
-    this.setState({ validated: true });
-  }  
+  }
+  renderFormSent = () => {
+    console.log('this.state.validated', this.state.validated)
+    if(!this.state.validated) {
+      console.log('this.state.validated', this.state.validated)
+      return (
+        <FormSent />
+      )
+    }
+  }
   render() {
     const { validated } = this.state;
     return (
@@ -46,9 +52,7 @@ class BootstrapForm extends React.Component {
         <Modal.Header closeButton>
             <img src={logo} />
         </Modal.Header>
-        <Modal.Body>
-          { this.state.validated && <FormSent /> }
-          { !this.state.validated && 
+        <Modal.Body>           
           <Form
             noValidate
             validated={validated}
@@ -125,7 +129,7 @@ class BootstrapForm extends React.Component {
               <FontAwesomeIcon icon="arrow-right" />
             </Button>
           </Form> 
-          }
+          {this.renderFormSent()}
         </Modal.Body>
       </Modal>
     );
