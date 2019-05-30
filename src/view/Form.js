@@ -18,7 +18,8 @@ class BootstrapForm extends React.Component {
   }
   showSuccess(){
     console.log("Tela de sucesso");
-    return { showForm: false };
+    
+    
   }
   handleSubmit(event) {
     const form = event.currentTarget;
@@ -46,8 +47,8 @@ class BootstrapForm extends React.Component {
             <img src={logo} />
         </Modal.Header>
         <Modal.Body>
-
-          {/*<FormSent />*/}
+          { this.state.validated && <FormSent /> }
+          { !this.state.validated && 
           <Form
             noValidate
             validated={validated}
@@ -124,7 +125,7 @@ class BootstrapForm extends React.Component {
               <FontAwesomeIcon icon="arrow-right" />
             </Button>
           </Form> 
-
+          }
         </Modal.Body>
       </Modal>
     );

@@ -58,7 +58,7 @@ body .btnPrimario:hover{
 				position: absolute;
 				z-index: -1;
 				left: 0;
-				opacity: 0.7;
+				opacity: 0.6;
 				top: 0;
 				content: "";
 			}	
@@ -123,7 +123,11 @@ body .btnPrimario:hover{
 		}
 	}
 	.Slick{
-		margin-bottom: 60px;
+		padding-bottom: 30px;    
+		background: #212428;
+		@media (min-width: 768px){
+			padding-bottom: 60px;  
+		}
 		.slick-slide img { 
 		    max-width: 100%;
 		}
@@ -135,7 +139,7 @@ body .btnPrimario:hover{
 		.filmes{
 			position: relative;	
 			a{
-				color: #000;
+				color: #fff;
 				margin: 8px 0 24px;
 				display: block;
 				text-align: center;
@@ -310,6 +314,12 @@ body .btnPrimario:hover{
 	text-align: center;
 	.textos{
 		padding: 20% 0;
+		p{
+			@media (min-width: 768px){
+				max-width: 80%;
+				margin: 0 auto;
+			}
+		}
 	}
 }
 .modal-dialog-centered{
