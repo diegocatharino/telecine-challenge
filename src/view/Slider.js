@@ -71,7 +71,7 @@ class Slider extends React.Component {
                 <div key={item.id} className="filmes">
                     <img alt={item.titulo_portugues} src={item.poster_m} />
                     <a href={item.id}>{item.titulo_portugues}</a>
-                    <div className="btnCta btnPrimario">Ver detalhes <FontAwesomeIcon icon="eye" /></div>
+                    <div className="btnCta btnPrimario">Assistir <FontAwesomeIcon icon="eye" /></div>
                 </div>) 
             })}
           </Slick>

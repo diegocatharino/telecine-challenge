@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 /* Variables */
 $corPrimaria: #e63f34;
 $corTxtPadrao: #fff;
@@ -8,7 +11,7 @@ $corActiveMobile: #fff397;
 	color: $corTxtPadrao;
 	font-size: 18px;
 	line-height: 16px;
-	padding: 16px 28px;
+	padding: 16px 32px;
 	border-radius: 24px;
 	transition: all 0.3s;
 }
@@ -16,9 +19,15 @@ $corActiveMobile: #fff397;
 	background: $corTxtPadrao;
 	color: $corPrimaria;	
 }
- 
+
+/* Main */
 .App{
+  	font-family: 'Montserrat', cursive;	
 	display: block;
+	ul, li{
+		list-style: none;
+		padding: 0;
+	}
 	.logo{
 	  	img{
 	  		text-align: center;
@@ -31,9 +40,9 @@ $corActiveMobile: #fff397;
 		text-decoration: none;
 	}
 	.Hero{
-		padding: 20px 0 60px;
+		padding: 18px 0 56px;
 		@media (min-width: 768px){
-			padding: 60px 0 100px;
+			padding: 56px 0 96px;
 			/*height: 90vh;*/
 			position: relative;
 			// overlay pro bg
@@ -62,15 +71,16 @@ $corActiveMobile: #fff397;
 			}
 		}
 		.content{
-			padding: 0 20px;
+			padding: 0 24px;
 			text-align: center;
 			color: $corTxtPadraoMobile;
 			@media (min-width: 768px){
 				color: $corTxtPadrao;
 			} 
 			h2{
-				margin-bottom: 30px;
+				margin-bottom: 32px;
 				line-height: 36px;
+				font-size: 30px;
 				strong{
 					font-weight: 600;
 					color: $corPrimaria;
@@ -86,12 +96,12 @@ $corActiveMobile: #fff397;
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 28px;
-				margin-bottom: 50px;
+				margin-bottom: 48px;
 				@media (min-width: 768px){
 					max-width: 500px;
 					font-size: 28px;
 					line-height: 32px;
-					margin: 0 auto 50px;
+					margin: 0 auto 48px;
 
 				}
 			}
@@ -103,6 +113,7 @@ $corActiveMobile: #fff397;
 		}
 	}
 	.Slick{
+		margin-bottom: 60px;
 		.slick-slide img { 
 		    max-width: 100%;
 		}
@@ -110,12 +121,12 @@ $corActiveMobile: #fff397;
 			position: relative;	
 			a{
 				color: #000;
-				margin: 10px 0 40px;
+				margin: 8px 0 24px;
 				display: block;
 				text-align: center;
 				font-weight: 600;
 				@media (min-width: 768px){
-					margin: 10px 0 20px;
+					margin: 8px 0 24px;
 					text-align: left;
 				}
 			}
@@ -134,14 +145,136 @@ $corActiveMobile: #fff397;
 			.btnCta{
 				position: absolute;
 				top: 6%;
-				left: calc(50% - 92px);
+				left: calc(50% - 80px);
 				opacity: 0;
 				cursor: pointer;				
 				svg{
-					margin-left: 6px;
+					margin-left: 8px;
 				}
 			}
 		}
 
+	}
+	.Details{
+		background: #909090;
+		padding: 48px 24px;
+		position: relative;
+		&:after{
+		    content: "";
+		    display: block;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 60px;
+		    background: rgb(144,144,144);
+		    background: linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(113,113,113,1) 100%);
+		    opacity: 1;
+		    z-index: 0;
+		}
+		.content{
+			@media (min-width: 768px){
+				max-width: 900px;	
+				margin: 0 auto;
+				display: block;			
+			}
+		}
+		.categoryDetails{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			display: block;
+			position: relative;
+			font-size: 18px;
+			margin-bottom: 32px;
+			color: #fff;
+			@media (min-width: 768px){
+				max-width: 500px;
+				margin: 0 auto 32px;
+			}
+			&:after{
+				content: "";
+				height: 1px;
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: #fff;
+			} 
+			span{
+				background: #909090;
+				position: relative;
+				z-index: 1;
+				padding-right: 24px;;
+			}
+		}
+		.titleDetails{
+			font-size: 24px;
+			font-weight: 600;
+			margin-bottom: 16px;
+			@media (min-width: 768px){
+				text-align: center;
+				font-size: 40px;
+				max-width: 400px;
+				margin: 0 auto 40px;
+			}
+		}
+		.listagemDetails{ 
+			@media (min-width: 768px){
+				display: flex;
+				justify-content: center;
+			}
+			li{
+				@media (min-width: 768px){
+					max-width: 50%;
+					display: inline-block;
+					padding: 0 24px;
+				}
+				.titleListagem{
+					display: block;
+					font-size: 20px;
+					font-weight: 600;
+					margin: 16px 0 8px;					
+				}
+				img{
+					max-width: 100%;
+					border-radius: 20px;
+					@media (min-width: 768px){
+						width: 360px;
+					}
+				}
+				ul.topics{
+					margin: 0 0 32px;
+					li{	
+						width: 50%;
+						display: inline-block;
+						padding: 0;
+						&:before{
+						    content: "\f00c";	
+							display: inline;
+							margin-right: 8px;
+							font-family: "FontAwesome";
+						}
+					}
+				}
+			}
+		}
+	}
+	.Footer{
+		padding: 24px 0;
+		img{
+			max-width: 150px;
+		}
+		img, a{
+			display: block;
+			margin: 0 auto 8px;
+			text-align: center;
+			color: #000;
+			text-transform: uppercase;
+			color: #909090;
+		}
+		strong{
+			display: block;
+			color: $corTxtPadraoMobile;
+		}
 	}
 }
