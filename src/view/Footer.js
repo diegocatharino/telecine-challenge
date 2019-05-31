@@ -6,8 +6,8 @@ class Footer extends Component {
     return (
       <div className="Footer">
         <div className="content">
-          <img src={logo} />
-          <a href="https://ajuda.telecineplay.com.br/" target="_blank" className="footerTexts">
+          <img alt="Telecine" src={logo} />
+          <a href="https://ajuda.telecineplay.com.br/" target="_blank" rel="noopener noreferrer" className="footerTexts">
             <strong>Ficou com alguma dúvida?</strong>
             Acesse nossa ajuda
           </a>

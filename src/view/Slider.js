@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Slick from "react-slick";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FormModal from "./Form";
+import FormButton from "./FormButton";
 
 const API = `content/populares.json`;
 
@@ -73,7 +72,7 @@ class Slider extends React.Component {
                     <img alt={item.titulo_portugues} src={item.poster_m} />
                     <a href={item.id}>{item.titulo_portugues}</a>
 
-                    <FormModal />
+                    <FormButton />
                 </div>) 
             })}
           </Slick>

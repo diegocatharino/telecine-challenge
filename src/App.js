@@ -4,7 +4,6 @@ import Hero from "./view/Hero";
 import Slider from "./view/Slider";
 import Details from "./view/Details";
 import Footer from "./view/Footer";
-import FormModal from "./view/Form";
 
 class App extends Component {
   render() {

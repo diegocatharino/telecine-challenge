@@ -12,7 +12,7 @@ class Details extends Component {
           <h5 className="titleDetails">O melhor catálogo. Em todas as telas.</h5>
           <ul className="listagemDetails">
             <li>
-              <img src={details1} />
+              <img alt="Assista na TV" src={details1} />
               <span className="titleListagem">Assista na TV</span>
               <ul className="topics">
                 <li><FontAwesomeIcon icon="check" />Smart TVs</li>
@@ -21,7 +21,7 @@ class Details extends Component {
               </ul>
             </li>
             <li>
-              <img src={details2} />
+              <img alt="Ou onde quiser" src={details2} />
               <span className="titleListagem">Ou onde quiser</span>
               <ul className="topics">
                 <li><FontAwesomeIcon icon="check" />Android</li>

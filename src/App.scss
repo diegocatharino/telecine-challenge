@@ -21,6 +21,7 @@ body .btnPrimario:hover{
 	color: $corPrimaria;	
 }
 .btnCta{
+	cursor: pointer;
 	svg{
 		margin-left: 12px;
 	}

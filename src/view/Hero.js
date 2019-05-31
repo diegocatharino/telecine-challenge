@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../img/tcplay.png'; 
-import FormModal from "./Form";
+import FormButton from "./FormButton";
 
 class Hero extends Component {
   render() {
@@ -18,7 +17,7 @@ class Hero extends Component {
           <h5 className="subTitle">
             Curta 7 dias grátis, assine por R$37,90/mês e cancele quando quiser.
           </h5>  
-          <FormModal />
+          <FormButton />
         </div>     
       </div>
     );

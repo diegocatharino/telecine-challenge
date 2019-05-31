@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import logo from '../img/tcplay.png'; 
+import React from "react";
 import Footer from "./Footer";
 
 class FormSent extends React.Component {
