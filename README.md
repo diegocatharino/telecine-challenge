@@ -1,4 +1,4 @@
-# Telecine Front-End Challenge
+﻿# Telecine Front-End Challenge
 
 Projeto em Reactjs (v16.8.6) do front de uma landing page da Telecine Play, com consumo de API para listagem de filmes.
 
@@ -46,4 +46,5 @@ Projeto em Reactjs (v16.8.6) do front de uma landing page da Telecine Play, com 
 
 ## Quer acessar online?
 
-- Projeto hospedado no Firebase! [https://telecine-teste.firebaseapp.com](https://telecine-teste.firebaseapp.com)
+- Projeto hospedado no Firebase!
+- [https://telecine-teste.firebaseapp.com](https://telecine-teste.firebaseapp.com)
