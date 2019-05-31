@@ -43,3 +43,7 @@ Projeto em Reactjs (v16.8.6) do front de uma landing page da Telecine Play, com 
 
 
 ```
+
+## Quer acessar online?
+
+- Projeto hospedado no Firebase! [https://telecine-teste.firebaseapp.com](https://telecine-teste.firebaseapp.com)
