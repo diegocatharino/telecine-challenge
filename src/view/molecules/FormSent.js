@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../organisms/Footer";
 
 class FormSent extends React.Component {
 

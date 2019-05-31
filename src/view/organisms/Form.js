@@ -2,10 +2,10 @@ import React from "react";
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
-import logo from '../img/tcplay.png'; 
+import logo from '../../img/tcplay.png'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FormSent from "./FormSent";
-import FormInput from "./FormInput";
+import FormSent from "../molecules/FormSent";
+import FormInput from "../molecules/FormInput";
 
 class BootstrapForm extends React.Component {
   constructor(...args) {
@@ -52,11 +52,7 @@ class BootstrapForm extends React.Component {
 
             { !this.state.showSuccess && <FormInput /> }
             
-            
-            <Button type="submit" className="btnCta btnPrimario">
-              Enviar meus dados
-              <FontAwesomeIcon icon="arrow-right" />
-            </Button>
+            { !this.state.showSuccess && <Button type="submit" className="btnCta btnPrimario"> Enviar meus dados <FontAwesomeIcon icon="arrow-right" /></Button> }
           </Form> 
         </Modal.Body>
       </Modal>

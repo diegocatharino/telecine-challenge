@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import details1 from '../img/details-1.jpg'; 
-import details2 from '../img/details-2.jpg'; 
+import details1 from '../../img/details-1.jpg'; 
+import details2 from '../../img/details-2.jpg'; 
 
 class Details extends Component {
   render() {

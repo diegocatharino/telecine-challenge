@@ -1,6 +1,6 @@
 import React from "react";
 import Slick from "react-slick";
-import FormButton from "./FormButton";
+import FormButton from "../atoms/FormButton";
 
 const API = `content/populares.json`;
 

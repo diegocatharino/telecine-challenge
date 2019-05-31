@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ButtonToolbar } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import BootstrapForm from "./Form";
+import BootstrapForm from "../organisms/Form";
 
 class FormButton extends React.Component {
   constructor(...args) {

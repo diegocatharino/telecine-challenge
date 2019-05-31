@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./App.scss";
-import Hero from "./view/Hero";
-import Slider from "./view/Slider";
-import Details from "./view/Details";
-import Footer from "./view/Footer";
+import "../../App.scss";
+import Hero from "../organisms/Hero";
+import Slider from "../organisms/Slider";
+import Details from "../organisms/Details";
+import Footer from "../organisms/Footer";
 
 class App extends Component {
   render() {

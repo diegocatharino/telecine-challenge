@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from '../img/tcplay.png'; 
-import FormButton from "./FormButton";
+import logo from '../../img/tcplay.png'; 
+import FormButton from "../atoms/FormButton";
 
 class Hero extends Component {
   render() {
