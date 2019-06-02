@@ -59,14 +59,12 @@ class Slider extends React.Component {
           }
         }
       ]
-    };
-    console.log("state", data);    
+    };  
     return (
       //populando a listagem após a requisição com os dados do jason
       <div className="Slick">
           <Slick {...settings}>
             {data.map((item) => {
-              console.log(item.poster_p);
               return(
                 <div key={item.id} className="filmes">
                     <img alt={item.titulo_portugues} src={item.poster_m} />

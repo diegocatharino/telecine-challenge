@@ -1,36 +1,51 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import details1 from '../../img/details-1.jpg'; 
-import details2 from '../../img/details-2.jpg'; 
+
+const conteudo = `content/conteudo.json`;
 
 class Details extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: [],
+    };
+  }
+
+  async componentDidMount() {
+    const response = await fetch(conteudo);
+    const result = await response.json();
+    this.setState({ data: result.data });
+  }
   render() {
     return (
       <div className="Details">
-        <div className="content">
+        {this.state.data.map(item => (
+        <div className="content" key="details">
           <span className="categoryDetails"><span>Dispositivos</span></span>
-          <h5 className="titleDetails">O melhor catálogo. Em todas as telas.</h5>
+          <h5 className="titleDetails">{item.details_main_title}</h5>
           <ul className="listagemDetails">
             <li>
-              <img alt="Assista na TV" src={details1} />
-              <span className="titleListagem">Assista na TV</span>
+              <img alt="Assista na TV" src={item.details_img1} />
+              <span className="titleListagem">{item.details_sub_title1}</span>
               <ul className="topics">
-                <li><FontAwesomeIcon icon="check" />Smart TVs</li>
-                <li><FontAwesomeIcon icon="check" />Chromecast</li>
-                <li><FontAwesomeIcon icon="check" />Xbox One</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title1_li1}</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title1_li2}</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title1_li3}</li>
               </ul>
             </li>
             <li>
-              <img alt="Ou onde quiser" src={details2} />
-              <span className="titleListagem">Ou onde quiser</span>
+              <img alt="Ou onde quiser" src={item.details_img2} />
+              <span className="titleListagem">{item.details_sub_title2}</span>
               <ul className="topics">
-                <li><FontAwesomeIcon icon="check" />Android</li>
-                <li><FontAwesomeIcon icon="check" />IOS</li>
-                <li><FontAwesomeIcon icon="check" />PC</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title2_li1}</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title2_li2}</li>
+                <li><FontAwesomeIcon icon="check" />{item.details_sub_title2_li3}</li>
               </ul>
             </li>          
           </ul>
         </div>
+        ))}
       </div>
     );
   }

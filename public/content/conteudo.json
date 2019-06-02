@@ -1,0 +1,20 @@
+{
+    "data": [{
+            "hero_main_title": "Filmes exclusivos dos maiores estúdios, é",
+            "hero_main_title_strong": "só dar um play",
+            "hero_sub_title": "Curta 7 dias grátis, assine por R$37,90/mês e cancele quando quiser.",
+            "hero_background_image": "content/img/hero-incriveis.jpg",       
+            "details_main_title": "O melhor catálogo. Em todas as telas.",
+            "details_img1": "content/img/details-1.jpg",       
+            "details_img2": "content/img/details-2.jpg",
+            "details_sub_title1": "Assista na TV",
+            "details_sub_title1_li1": "Smart TVs",
+            "details_sub_title1_li2": "Chromecast",
+            "details_sub_title1_li3": "Xbox One",
+            "details_sub_title2": "Ou onde quiser",
+            "details_sub_title2_li1": "Android",
+            "details_sub_title2_li2": "IOS",
+            "details_sub_title2_li3": "PC"
+        }
+    ]
+}
