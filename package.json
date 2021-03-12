@@ -55,7 +55,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-bootstrap-maskedinput": "^0.4.0",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "16.8.6",
     "react-slick": "^0.24.0",
     "resolve": "1.10.0",
